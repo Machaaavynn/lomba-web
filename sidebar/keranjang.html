@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Keranjang</title>
+    <link rel="stylesheet" href="keranjang.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="image/logo.png" alt="Profile Icon">
+            <h3>Malboro Club</h3>
+        </div>
+        <ul class="menu">
+            <li><a href="buy.html">🛒 BELANJA</a></li>
+            <li><a href="keranjang.html">🛍️ KERANJANG</a></li>
+            <li><a href="profile.html">👤 PROFILE</a></li>
+        </ul>
+        <div class="footer">
+            <h4>Malboro Club</h4>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Keranjang</h1>
+        </div>
+        
+        <a href="index.html" class="back-button">Kembali ke Beranda</a>
+
+        <!-- Keranjang Produk -->
+        <div class="cart-container">
+            <!-- Produk dalam keranjang -->
+            <div class="cart-item">
+                <img src="image/sosis.jpeg" alt="Sosis">
+                <h3>SOSIS</h3>
+                <p>Harga: $5000</p>
+                <input type="number" value="1" min="1" class="item-quantity">
+                <button class="remove-item">Hapus</button>
+            </div>
+            
+            <div class="cart-item">
+                <img src="image/tempura.jpeg" alt="Tempura">
+                <h3>TEMPURA</h3>
+                <p>Harga: $5000</p>
+                <input type="number" value="1" min="1" class="item-quantity">
+                <button class="remove-item">Hapus</button>
+            </div>
+
+            <!-- Tambahkan produk lainnya jika perlu -->
+        </div>
+
+        <!-- Total Harga -->
+        <div class="total-container">
+            <h2>Total: $10000</h2>
+            <button class="checkout-btn">Proses Pembelian</button>
+        </div>
+    </div>
+
+    <script src="keranjang.js"></script>
+</body>
+</html>

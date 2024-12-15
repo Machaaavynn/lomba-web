@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Produk</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Pilih Produk</h1>
+    </div>
+
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="image/sosis.jpeg" alt="Sosis">
+            <h2>SOSIS</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Sosis&image=image/sosis.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+        <div class="menu-item">
+            <img src="image/tempura.jpeg" alt="Tempura">
+            <h2>TEMPURA</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Nugget&image=image/tempura.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+        <div class="menu-item">
+            <img src="image/dimsum.jpeg" alt="Burger">
+            <h2>DIMSUM</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Burger&image=image/dimsum.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+        <div class="menu-item">
+            <img src="image/nuget.jpeg" alt="Burger">
+            <h2>NUGGET</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Burger&image=image/nuget.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+        <div class="menu-item">
+            <img src="image/kebab.jpeg" alt="Burger">
+            <h2>KEBAB</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Burger&image=image/kebab.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+        <div class="menu-item">
+            <img src="image/risolmayo.jpeg" alt="Burger">
+            <h2>ROSOL MAYO</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Burger&image=image/risolmayo.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+        <div class="menu-item">
+            <img src="image/bakpao.jpeg" alt="Burger">
+            <h2>BAKPAO</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Burger&image=image/bakpao.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+        <div class="menu-item">
+            <img src="image/kentang.jpeg" alt="Burger">
+            <h2>KENTANG</h2>
+            <h3>Harga: $5000</h3>
+            <a href="?name=Burger&image=image/kentang.jpeg&price=$5000">Beli Sekarang</a>
+        </div>
+    </div>
+    <div class="purchase-container" id="purchaseContainer" style="display: none;">
+        <img src="image/default.jpeg" alt="Produk" id="productImage" style="width:200px; height:auto;">
+        <h2 id="productName">Nama Produk</h2>
+        <h3 id="productPrice">Harga: $0</h3>
+        <form id="purchaseForm">
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <br><br>
+            <button type="button" onclick="processPurchase()">Beli Sekarang</button>
+        </form>
+    </div>
+    <div class="custom-back-div">
+        <a href="index.html">
+            <button type="button" class="index.html">Back</button>
+        </a>
+    </div>
+    
+    <script src="buy.js"></script>
+</body>
+</html>
